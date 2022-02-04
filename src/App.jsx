@@ -1,6 +1,6 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 
@@ -137,7 +137,7 @@ const handleKeydown = (e) => {
   }
 }
 
-React.useEffect(() => {
+useEffect(() => {
     document.addEventListener('keydown', handleKeydown);
 }, [])
 
