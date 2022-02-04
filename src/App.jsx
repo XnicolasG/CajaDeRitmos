@@ -138,7 +138,7 @@ const handleKeydown = (e) => {
 }
 
 useEffect(() => {
-    document.addEventListener('keydown', handleKeydown);
+    document.addEventListener('keydown', handleKeydown());
 }, [])
 
 return (
@@ -187,10 +187,7 @@ const styleActiveKey = (key) => {
   key.parentElement.style.color = "#ffffff"
 }
 
-const deActivatedKey = (audio) => {
-  audio.parentElement.style.backgroundColor = "#ffffff"
-  audio.parentElement.style.color = "#000000"
-}
+
 
 const deactivateAudio = (audio) => {
  setTimeout(() => {
